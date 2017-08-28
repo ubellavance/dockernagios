@@ -1,7 +1,7 @@
 # Version 0.0.1
 FROM centos:latest
 MAINTAINER Ugo Bellavance "ugob@lubik.ca"
-RUN yum -y update
+RUN yum -y update; yum clean all
 RUN yum -y install epel-release
 RUN yum -y install fping httpd mod_ssl nagios nagios-plugins-all postfix || true
 RUN touch /var/run/nagios.pid

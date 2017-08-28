@@ -1,4 +1,4 @@
-# Version 0.0.2
+# Version 0.0.3
 FROM centos:latest
 MAINTAINER Ugo Bellavance "ugob@lubik.ca"
 RUN yum -y update && yum clean all
